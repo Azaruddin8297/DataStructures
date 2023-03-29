@@ -23,7 +23,7 @@ namespace DataStructures
                 {
                    temp = temp.next;
                 }
-                temp = temp.next;
+                temp.next = node;
             }
             Console.WriteLine("{0} Inserted into Linked List", node.data);
         }
