@@ -54,7 +54,7 @@ namespace DataStructures
                 Console.WriteLine(temp.data + " ");
                 temp = temp.next;
             }
-            Console.WriteLine();
+            
         }
         internal Node InsertAtParticularPosition(int position, int data)
         {
@@ -82,6 +82,15 @@ namespace DataStructures
             prev.next = newestNode;
             return this.head;
         }
-    
-}
+        internal Node RemoveFirstNode()
+        {
+            if (this.head == null)
+            {
+                return null;
+            }
+            this.head = this.head.next;
+            return this.head;
+        }
+
+    }
 }

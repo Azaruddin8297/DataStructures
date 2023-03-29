@@ -14,6 +14,9 @@
             //link.AddInReverseOrder(56);
             link.InsertAtParticularPosition(2, 10);
             link.Display();
+            Console.WriteLine("**************************");
+            link.RemoveFirstNode();
+            link.Display();
         }
     }
 }
