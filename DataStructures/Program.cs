@@ -8,11 +8,13 @@
             link.Add(70);
             link.Add(30);
             link.Add(56);
-            
+
             //link.AddInReverseOrder(70);
             //link.AddInReverseOrder(30);
             //link.AddInReverseOrder(56);
-            link.InsertAtParticularPosition(2, 10);
+            int position = link.Search(30);
+            position++;
+            link.InsertAtParticularPosition(position, 40);
             link.Display();
             Console.WriteLine("**************************");
             //link.RemoveFirstNode();
@@ -20,7 +22,7 @@
             //Console.WriteLine("**************************");
             //link.RemoveLastNode();
             //link.Display();
-            Console.WriteLine("Present at {0} position",link.Search(30));
+            //Console.WriteLine("Present at {0} position",link.Search(30));
         }
     }
 }
