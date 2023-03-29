@@ -17,6 +17,9 @@
             Console.WriteLine("**************************");
             link.RemoveFirstNode();
             link.Display();
+            Console.WriteLine("**************************");
+            link.RemoveLastNode();
+            link.Display();
         }
     }
 }
