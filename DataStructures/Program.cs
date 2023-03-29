@@ -15,11 +15,12 @@
             link.InsertAtParticularPosition(2, 10);
             link.Display();
             Console.WriteLine("**************************");
-            link.RemoveFirstNode();
-            link.Display();
-            Console.WriteLine("**************************");
-            link.RemoveLastNode();
-            link.Display();
+            //link.RemoveFirstNode();
+            //link.Display();
+            //Console.WriteLine("**************************");
+            //link.RemoveLastNode();
+            //link.Display();
+            Console.WriteLine("Present at {0} position",link.Search(30));
         }
     }
 }

@@ -109,6 +109,22 @@ namespace DataStructures
             NewNode.next = null;
             return head;
         }
+        internal int Search(int value)
+        {
+            Node node = this.head;
+            int count = 0;
+            while (node != null)
+            {
+
+                if (node.data == value)
+                {
+                    return count;
+                }
+                node = node.next;
+                count++;
+            }
+            return count;
+        }
 
     }
 }
