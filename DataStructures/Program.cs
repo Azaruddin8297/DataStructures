@@ -17,6 +17,9 @@
             link.InsertAtParticularPosition(position, 40);
             link.Display();
             Console.WriteLine("**************************");
+            int position1 = link.Search(40);
+            link.DeleteNodeAtParticularPosition(position);
+            link.Display();
             //link.RemoveFirstNode();
             //link.Display();
             //Console.WriteLine("**************************");
